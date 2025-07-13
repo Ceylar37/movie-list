@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Next Swagger API Example",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/movie": {
+      "get": {
+        "description": "Возвращает список фильмов",
+        "responses": {
+          "200": {
+            "description": "Hello World!"
+          }
+        }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}
