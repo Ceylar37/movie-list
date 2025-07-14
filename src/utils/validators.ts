@@ -32,6 +32,7 @@ export function validateBody<T extends ZodObject>(data: unknown, schema: T): z.o
         422
       );
     }
+    console.error(error);
     throw new ValidationError('Ошибка сервера', 500);
   }
 }

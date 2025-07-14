@@ -202,6 +202,7 @@ export async function GET(req: NextRequest) {
     if (error instanceof ValidationError) {
       return NextResponse.json({ error: error.message }, { status: error.code });
     }
+    console.error(error);
     return NextResponse.json({ error: 'Ошибка сервера' }, { status: 500 });
   }
 }
@@ -221,6 +222,7 @@ export async function POST(req: NextRequest) {
     if (error instanceof ValidationError) {
       return NextResponse.json({ error: error.message }, { status: error.code });
     }
+    console.error(error);
     return NextResponse.json({ error: 'Ошибка сервера' }, { status: 500 });
   }
 }
